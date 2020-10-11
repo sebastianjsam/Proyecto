@@ -1,2 +1,0 @@
-# Proyecto
- proyecto de poster
