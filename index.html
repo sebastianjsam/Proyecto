@@ -54,8 +54,8 @@
         frameworkUrl: buildUrl + "/ejemplo2dCCorrer.framework.js",
         codeUrl: buildUrl + "/ejemplo2dCCorrer.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "PROYECTOSEMILLERO",
+        companyName: "@SebastianJsam",
+        productName: "Jornddas de Ingenieria",
         productVersion: "0.1",
       };
 
@@ -66,11 +66,10 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
+        alert("Incompatible Descague la App")
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1200px";
+        canvas.style.height = "680px";
       }
       loadingBar.style.display = "block";
 
