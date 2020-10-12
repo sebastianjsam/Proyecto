@@ -66,9 +66,8 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        alert("Aplicacion Incompatible");
-        window.location.href = "Vistam.html";
-
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
