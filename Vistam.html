@@ -6,7 +6,7 @@
   <body  >
     <div id="unity-container" class="unity-mobile">
       <center><h1>Aplicacion Movíl</h1>
-      <img src="img/botton.png"/>
+      <button type="button" class="boton_personalizado" onclick=" window.location.href = 'apk'"></button>
       </center>
       <footer style="background-color:#9EBBF5">
         <div id="footer-container">
@@ -25,6 +25,32 @@
   
   </div><!-- end container -->
 
+<style type="text/css">
+  
+
+ .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    background-image:url(img/botton.png);
+    border-width: 0px;
+background-repeat:no-repeat;
+    height:60px;
+width:14%;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+    background-image:url(img/rojo.png);
+  }
+           
+  
+</style>
   </body>
 
 </html>
