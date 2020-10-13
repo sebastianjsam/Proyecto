@@ -5,6 +5,20 @@
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="wJ65y89k"></script>
 
+
+<script>//<![CDATA[
+function getlink() {
+var aux = document.createElement("input");
+aux.setAttribute("value", window.location.href.split("?")[0].split("#")[0]);
+document.body.appendChild(aux);
+aux.select();
+document.execCommand("copy");
+document.body.removeChild(aux);
+alert("URL copiada al portapapeles\n\n" + window.location.href.split("?")[0].split("#")[0]);
+}
+//]]></script>
+//]]></script>
+
   </head>
   <body  >
     <div id="unity-container" class="unity-mobile">
@@ -26,7 +40,9 @@
       <div> <img src="img/navegador.png" height="350px" width="600px" style="border-radius: 10px;border-width: 5px;border-style: solid;"></div>
      <a href="whatsapp://send?text=https://sebastianjsam.github.io/Proyecto/" data-action="share/whatsapp/share">
     <img border="0" src="img/logowhasap.png" width="80px" height="80px">
-<div class="fb-share-button" data-href="https://sebastianjsam.github.io/Proyecto/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsebastianjsam.github.io%2FProyecto%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+
+
+<a class="copi" href="javascript:getlink();">Copiar URL</a>
 </center>
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
@@ -78,7 +94,15 @@ width:210px;
 
     background-image:url(img/rojo.png);
   }
-
+.copi {
+display: block;
+width: 120px;
+margin: 0 auto;
+padding: 10px;
+color: #ffffff;
+background: #990000;
+text-align: center;
+}
            
   
 </style>
