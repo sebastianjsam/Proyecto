@@ -48,3 +48,4 @@
 #other object
 *.bc filter=lfs diff=lfs merge=lfs -text
 *.unity3d filter=lfs diff=lfs merge=lfs -text
+*.e filter=lfs diff=lfs merge=lfs -text
